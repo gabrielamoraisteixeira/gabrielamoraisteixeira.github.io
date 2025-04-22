@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="window">
+        <div class="header">
+            <div class="title">gabi.zip</div>
+            <div class="controls">
+                <span>⨉</span><span>▭</span><span>⎯</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sidebar">
+                <img src="images/pfpp.png" alt="Profile" class="profile-pic">
+                <h2>about me ✩</h2>
+                <div class "info">
+                <p><strong>name:</strong> gabriela teixeira</p>
+                <p><strong>location:</strong> porto, portugal</p>
+                <p><strong>education:</strong> Instituto Superior de Engenharia do Porto (ISEP) - 
+                    Bachelor’s Degree in Computer Engineering 
+                    </p>
+                    <p> <a href="mailto:gabrielamoteixeira@gmail.com" style="white-space: nowrap;">gabrielamoteixeira@gmail.com</a></p>
+
+            </div>
+            </div>
+            <div class="main">
+                <h1>welcome to my page!!!</h1>
+                <p>
+                    Hi! This is a simple page where you can see more about me and about my projects.  
+                    I’m currently in my second year of a Bachelor’s Degree in Computer Engineering, with a strong focus on software development. I’m really passionate about learning new things and always looking for ways to grow and challenge myself.
+
+
+                </p>
+                <h2>my projects</h2>
+                <div class="projects">
+                    <div class="project">
+                        <a href="javascript:void(0);" onclick="openModal('project1-modal')">Green Space Management System</a>
+                    </div>
+            
+                </div>
+            </div>
+            <div class="details">
+                <h2>my toolkit</h2>
+                <p><b>Programming Languages:</b>  C, Java, Python, SQL</p>
+                <p><b>Technologies:</b> AWS, Docker, Git, Linux | Database: Oracle & PostgreSQL</p>
+                <p><b>Methodologies:</b> Agile,  CI/CD, Domain-Driven Design (DDD), Scrum, SOLID principles, Test-Driven Development(TDD), 
+                  
+                </p>
+                <h3>feel free to check my:</h3>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/gabriela-teixeira-47413b2ba/" target="_blank" class="linkedin">
+                        <img src="images/linkedin-logo.png" alt="linkedin " class="icon">
+                        <span>Linkedin</span>
+                    </a>
+
+                    <a href="https://github.com/gabrielamoraisteixeira" target="_blank" class="github">
+                        <img src="images/github.png" alt="github " class="icon">
+                        <span>Github</span>
+                    </a>
+
+                </div>
+        </div>
+        
+    </div>
+
+    <div id="project1-modal" class="modal">
+        <div class="window modal-content">
+            <div class="header">
+                <div class="title">project.txt</div>
+                <div class="controls">
+                    <span onclick="closeModal('project1-modal')">⨉</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="main" style="width: 100%; text-align: center;">
+                  <h2>Green Space Management System</h2>
+              
+                  <p>As part of a team project in my first year of university, I contributed to the design and implementation of
+                    a software solution that supports the operations of an organization responsible for planning, maintaining,
+                    and managing urban green spaces:</p>
+              
+                  <p>◦ Core features included the registration and management of collaborators (with associated jobs and skills),
+                    dynamic team formation, vehicle and equipment inventory tracking with maintenance scheduling, and a full
+                    agenda system for assigning, scheduling, and monitoring field tasks.</p>
+              
+                  <p>◦ The system was developed in Java using Object-Oriented Programming (OOP) following TDD and was
+                    supported by a GUI developed with JavaFX.</p>
+              
+                  <a href="https://github.com/gabrielamoraisteixeira/isep-lapr2-project" target="_blank" class="github">
+                    Check it on GitHub!
+                  </a>
+                                <div style="margin-top: 20px;">
+                    <img src="images/pj1.png" alt="project image" style="width: 250px; height: auto; border-radius: 8px;">
+                  </div>
+                </div>
+              </div>
+              
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+    
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+    
+        window.onclick = function(event) {
+            const modal = document.getElementById("project1-modal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    
+
+    
+</body>
+</html>
