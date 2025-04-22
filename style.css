@@ -1,5 +1,5 @@
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   background: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG9pcWF1cTZuZnR0dTBmbXlzZTBkd3hlMDIxZTUwYWxxYnZzajh2NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Eires9AKDUvese4F1o/giphy.gif")
     no-repeat center center fixed;
@@ -131,4 +131,77 @@ h3 {
   max-width: 600px;
   max-height: 580px;
   overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .window {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .details,
+  .main {
+    width: 100%;
+    padding: 15px;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .controls {
+    margin-top: 5px;
+  }
+
+  .sidebar img {
+    width: 60%;
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .projects .project {
+    font-size: 0.95rem;
+  }
+
+  .social a {
+    font-size: 0.9rem;
+  }
+
+  .modal-content {
+    width: 90%;
+    height: auto;
+    max-height: 80%;
+  }
+
+  .main {
+    text-align: center;
+  }
+
+  .modal .main {
+    padding: 20px;
+  }
+
+  .social {
+    justify-content: center;
+  }
 }
