@@ -191,6 +191,7 @@ h3 {
     width: 90%;
     height: auto;
     max-height: 80%;
+    overflow-x: auto;
   }
 
   .main {
