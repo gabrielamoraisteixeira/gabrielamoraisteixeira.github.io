@@ -141,12 +141,13 @@ h3 {
 
   .content {
     flex-direction: column;
+    overflow-x: auto;
   }
 
   .sidebar,
   .details,
   .main {
-    width: 100%;
+    width: 90%;
     padding: 15px;
     border-right: none;
     border-bottom: 1px solid #ccc;
@@ -199,7 +200,8 @@ h3 {
   }
 
   .modal .main {
-    padding: 20px;
+    padding: 5px;
+    font-size: 90%;
   }
 
   .social {
