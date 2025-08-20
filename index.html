@@ -33,14 +33,17 @@
                 <h1>welcome to my page!!!</h1>
                 <p>
                     Hi! This is a simple page where you can see more about me and about my projects.  
-                    I’m currently in my second year of a Bachelor’s Degree in Computer Engineering, with a strong focus on software development. I’m really passionate about learning new things and always looking for ways to grow and challenge myself.
+                    I’m currently in my last year of a Bachelor’s Degree in Computer Engineering, with a strong focus on software development. I’m really passionate about learning new things and always looking for ways to grow and challenge myself.
 
 
                 </p>
                 <h2>my projects</h2>
                 <div class="projects">
                     <div class="project">
-                        <a href="javascript:void(0);" onclick="openModal('project1-modal')">Green Space Management System</a>
+                        <a href="javascript:void(0);" onclick="openModal('project1-modal')">Green Space Management</a>
+                    </div>
+                    <div class="project">
+                        <a href="javascript:void(0);" onclick="openModal('shodrone-modal')">Drone Multimedia Shows Management </a>
                     </div>
             
                 </div>
@@ -48,7 +51,7 @@
             <div class="details">
                 <h2>my toolkit</h2>
                 <p><b>Programming Languages:</b>  C, Java, Python, SQL</p>
-                <p><b>Technologies:</b> AWS, Docker, Git, Linux | Database: Oracle & PostgreSQL</p>
+                <p><b>Technologies:</b> AWS, Docker, Git, Linux, Node.js, React.js | Database: Oracle & PostgreSQL</p>
                 <p><b>Methodologies:</b> Agile,  CI/CD, Domain-Driven Design (DDD), Scrum, SOLID principles, Test-Driven Development(TDD), 
                   
                 </p>
@@ -72,14 +75,15 @@
     <div id="project1-modal" class="modal">
         <div class="window modal-content">
             <div class="header">
-                <div class="title">project.txt</div>
+                <div class="title">alltree.txt</div>
                 <div class="controls">
                     <span onclick="closeModal('project1-modal')">⨉</span>
                 </div>
             </div>
             <div class="content">
                 <div class="main" style="width: 100%; text-align: center;">
-                  <h2>Green Space Management System</h2>
+                 <h2>AllTree</h2>
+
               
                   <p>As part of a team project in my first year of university, I contributed to the design and implementation of
                     a software solution that supports the operations of an organization responsible for planning, maintaining,
@@ -100,7 +104,30 @@
                   </div>
                 </div>
               </div>
-              
+                </div>
+            </div>
+
+        <div id="shodrone-modal" class="modal">
+        <div class="window modal-content">
+            <div class="header">
+                <div class="title">shodrone.txt</div>
+                <div class="controls">
+                    <span onclick="closeModal('shodrone-modal')">⨉</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="main" style="width: 100%; text-align: center;">
+                 <h2>Shodrone</h2>
+
+                   <p>Participated in a semester-long team project to develop a Java-based backoffice system for managing drone multimedia shows.</p>
+                   <p> ◦ Designed and implemented features for customer and user management, figure catalogue, and show proposal workflows. </p>
+                   <p>◦ Applied Domain-Driven Design (DDD), Test-Driven Development (TDD), and developed a simulation engine in C using processes, pipes, and shared memory.</p>
+                  <div style="margin-top: 20px;">
+                    <img src="images/pj2.png" alt="project image" style="width: 230px; height: 180px; border-radius: 8px;">
+                  </div>
+                </div>
+              </div>
+            
                 </div>
 
 
